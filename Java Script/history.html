@@ -1,0 +1,22 @@
+<html>
+<body>
+    <script type="text/javascript">  
+        function printvalue(){  
+        var name=document.form1.name.value;  
+        var result = confirm("Welcome: "+name+" DO you want to close this window??");  
+        if(result)
+            {
+                document.close();
+            }
+        else{
+            document.open();
+        }
+        }  
+    </script>  
+
+    <form name="form1">  
+        Enter Name:<input type="text" name="name"/><br><br>
+        <input type="button" onclick="printvalue()" value="print name"/>  
+    </form>     
+</body>
+</html>
